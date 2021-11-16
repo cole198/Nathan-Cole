@@ -1,2 +1,12 @@
-This is my implementation of a Huffman Decoder for compression of files.
+This is my implementation of a Huffman Decoder. 
+After compiling using gcc the program can be run using
+./executable in tree original count huffmantree evaluation
 
+Where executable is the execcutable created after compilation, in is an input file with the following format:
+three long integers, the topology of a coding tree(Huffman or not) in bit-based representation under preorder traversal, and the encoding of
+the original file. (Sample inputs in encoded) The following are output files: tree is a preorder traversal of the tree
+given tree in the input file in chararcter-based representation, original is the original document before it was encoded, 
+count is the frequencies of all 256 ASCII characters of the decoded file, huffmantree is the topology of a 
+huffman tree for the file in character-based representation, and eval is a file with four numbers which are firstly the 
+number of bytes and bits needed to encode the original using a Huffman tree, and the last two are the bytes and bits needed to
+encode the original with the given input tree. 
